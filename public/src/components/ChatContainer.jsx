@@ -34,7 +34,7 @@ export default function ChatContainer({ currentChat, socket }) {
       }
     };
     getCurrentChat();
-  }, []);
+  }, [currentChat]);
 
   const handleSendMsg = async (msg) => {
     const data = await JSON.parse(
